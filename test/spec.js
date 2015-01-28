@@ -25,18 +25,18 @@ describe('loop-practice', function() {
   ];
 
   it('should should print all the ages in order', function() {
-    expect(agesInOrder(students)).toBe([25,27,32,24,18]);
+    expect(agesInOrder(students)).toEqual([25,27,32,24,18]);
   });
 
   it("should print names and cities in order", function () {
-    expect(namesAndCities(students)).toBe(['Liz, Boulder', 'Meghan, Denver', 'Trent, Boulder', 'Chelsea, Boulder', 'Amir, Denver']);
+    expect(namesAndCities(students)).toEqual(['Liz, Boulder', 'Meghan, Denver', 'Trent, Boulder', 'Chelsea, Boulder', 'Amir, Denver']);
   });
 
   it("should print all students from Boulder", function () {
-    expect(peopleFromBoulder(students)).toBe(['Liz is from Boulder','Trent is from Boulder','Chelsea is from Boulder']);
+    expect(peopleFromBoulder(students)).toEqual(['Liz is from Boulder','Trent is from Boulder','Chelsea is from Boulder']);
   });
 
   it("should print all students older than 25", function () {
-    expect(olderThan25(students)).toBe(['Meghan is older than 25','Trent is older than 25']);
+    expect(olderThan25(students)).toEqual(['Meghan is older than 25','Trent is older than 25']);
   });
 });
